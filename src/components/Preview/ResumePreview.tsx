@@ -14,10 +14,11 @@ const ResumePreview = ({ data }: Props) => {
   const componentRef = useRef<HTMLDivElement>(null);
   const [selectedTemplate, setSelectedTemplate] = useState(templates[0]);
 
-  const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
-    documentTitle: `${data.name}-Resume`,
-  });
+const handlePrint = useReactToPrint({
+  content: () => componentRef.current,
+  documentTitle: `${data.name}-Resume`,
+} as any);
+
 
   const renderTemplate = () => {
     switch (selectedTemplate) {

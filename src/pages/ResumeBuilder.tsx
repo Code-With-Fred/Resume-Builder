@@ -1,4 +1,4 @@
-// src/pages/ResumeBuilder.tsx
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import PersonalInfo from "../components/Builder/PersonalInfo";
@@ -7,7 +7,6 @@ import Experience from "../components/Builder/Experience";
 import Skills from "../components/Builder/Skills";
 import Projects from "../components/Builder/Projects";
 import Summary from "../components/Builder/Summary";
-// import ResumePreview from '../components/Preview/ResumePreview';
 import ResumePreview from "../components/Preview/ResumePreview";
 import type { ResumeData } from "../types/resume";
 
