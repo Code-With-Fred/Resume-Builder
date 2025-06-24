@@ -50,7 +50,7 @@ const Home = () => {
       transition: {
         duration: 1.5,
         repeat: Infinity,
-        repeatType: "reverse"
+        repeatType: 'mirror' as const
       }
     }
   };
