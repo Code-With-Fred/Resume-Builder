@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react';
 import { useReactToPrint } from 'react-to-print';
 import Preview from '../../components/Builder/Preview';
-// import Preview from '../../components/Preview'
 import { templates } from '../../constants/templates';
 import TemplateSwitcher from './TemplateSwitcher';
 import type { ResumeData } from '../../types/resume';

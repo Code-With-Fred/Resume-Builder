@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import { motion, useAnimation } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -57,7 +56,7 @@ const Home = () => {
 
   return (
     <div 
-      className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-white flex items-center justify-center px-4 transition-colors duration-1000 overflow-hidden"
+      className="min-h-screen bg-gradient-to-br from-white via-black-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-white flex items-center justify-center px-4 transition-colors duration-1000 overflow-hidden pt-12 pb-12"
       ref={ref}
     >
       {/* Animated background elements */}
@@ -137,9 +136,9 @@ const Home = () => {
                 animate={{ rotate: 360 }}
                 transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
               >
-                🌞
+                
               </motion.span>
-              <span className="hidden sm:inline">Light Mode</span>
+<span className="hidden sm:inline mx-4">Light Mode</span>
             </>
           ) : (
             <>
@@ -147,7 +146,7 @@ const Home = () => {
                 animate={{ rotate: -15, scale: [1, 1.1, 1] }}
                 transition={{ duration: 3, repeat: Infinity }}
               >
-                🌙
+                
               </motion.span>
               <span className="hidden sm:inline">Dark Mode</span>
             </>
@@ -168,7 +167,7 @@ const Home = () => {
               transition={{ duration: 1.5, delay: 0.3 }}
               className="inline-block overflow-hidden whitespace-nowrap"
             >
-              Craft Your Career Story
+              Resume Builder
             </motion.span>
           </motion.h1>
           <motion.div
@@ -190,7 +189,7 @@ const Home = () => {
             className="inline-block"
             whileHover={{ scale: 1.05 }}
           >
-            ✨ Transform your professional journey into a
+            stress free resume builder.
           </motion.span>{' '}
           <motion.span
             className="font-bold text-blue-600 dark:text-blue-400 inline-block"
@@ -214,17 +213,17 @@ const Home = () => {
         >
           {[
             {
-              icon: '🚀',
+              icon: '',
               title: 'Lightning Fast',
               desc: 'Build in minutes, not hours'
             },
             {
-              icon: '🎨',
+              icon: '',
               title: 'Designer Templates',
               desc: 'Curated by career experts'
             },
             {
-              icon: '🔮',
+              icon: '',
               title: 'AI Enhancements',
               desc: 'Smart suggestions included'
             }
@@ -266,7 +265,7 @@ const Home = () => {
                   animate={{ x: [0, 5, 0] }}
                   transition={{ duration: 1.5, repeat: Infinity }}
                 >
-                  🚀
+                  
                 </motion.span>
               </span>
               <motion.div
@@ -315,7 +314,7 @@ const Home = () => {
         >
           <div className="flex items-center mb-3">
             <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-3">
-              <span className="text-blue-600 dark:text-blue-300">👩‍💼</span>
+              <span className="text-blue-600 dark:text-blue-300"></span>
             </div>
             <div>
               <h4 className="font-bold">Sarah K.</h4>
